@@ -1,0 +1,61 @@
+h1 {
+  font-family: "Poppins", sans-serif;
+  color: $myblue;
+  font-size: 1.3em;
+}
+h2{
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8em;
+  font-weight:200;
+}
+
+h3{
+  font-family: "Poppins", sans-serif;
+  color: rgb(57, 54, 54);
+  font-size: 0.7em;
+  margin: 2px;
+  font-weight: 400;
+}
+
+h4 {
+  font-family: "Nunito", sans-serif;
+  color: rgb(138, 129, 129);
+  font-size: 0.7em;
+  font-weight:200;
+  margin: 5px;
+}
+p {
+  font-family: "Poppins", sans-serif;
+  color: rgb(111, 107, 107);
+  font-size: 0.6em;
+  margin:5px 3px;
+}
+
+.titles {
+  font-family: "Poppins", sans-serif;
+  margin: 20px 0 0 10px;
+  color: rgb(57, 54, 54);
+  font-size: 1em;
+  font-weight:1000;
+}
+
+a{
+  text-decoration: none;
+}
+
+// .main-title{
+//   font-family: 'Poppins', sans-serif;
+//   font-size: 2em;
+// }
+
+.divider {
+  width: 70%;
+  height: 1px;
+  background-color: rgb(57, 54, 54);
+  margin-bottom: 20px;
+}
+.divider-vertical {
+    width: 1px;
+    height: 70%;
+    background-color: rgb(57, 54, 54);
+  }

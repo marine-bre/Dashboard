@@ -1,0 +1,75 @@
+.login--container {
+  font-family: "Poppins", sans-serif;
+  height: 60%;
+  width: 35%;
+  max-width: 400px;
+  min-width: 340px;
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(7px);
+  color: $myblue;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 2px 2px 40px rgb(143, 130, 130);
+  position: relative;
+  p{
+    font-family: "Poppins", sans-serif;
+    font-size: 0.7em;
+    color: lightslategray;
+  }
+}
+.login--title {
+  font-size: 2em;
+  text-align: center;
+  width: 100%;
+}
+
+.login--form {
+  display: flex;
+  flex-direction: column;
+  height: 120%;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.login--input {
+  width: 300px;
+  height: 20px;
+  border: none;
+  border-bottom: solid 1.5px $myblue;
+  background-color: transparent;
+}
+
+
+.login--input--small{
+  font-size: 0.8em;
+}
+
+.login--input:focus {
+  outline: none;
+  border-bottom: solid 2px $myblue;
+}
+
+.error {
+  font-size: 0.7em;
+  color: red;
+  max-width: 300px;
+}
+
+.error-bar {
+  width: 100%;
+  height: 0;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(7px);
+  transition: all 0.5s ease-in-out;
+  position: fixed;
+  p {
+    font-size: 1em;
+    color: $mypink;
+    font-family: "Poppins", sans-serif;
+  }
+}
+.show-error-bar {
+  height: 30px;
+}

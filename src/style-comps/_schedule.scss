@@ -1,0 +1,105 @@
+/* tasks */
+
+#tasks {
+  width: 90vw;
+  height: 95vh;
+}
+
+.tasks {
+  overflow-y: scroll;
+  width: 100%;
+  margin-right: 150px;
+}
+
+.task--work {
+  color: #f7bf4f;
+  grid-area: 3/2/7/3;
+}
+.task--home {
+  color: #5e7feb;
+  height: 70vh !important;
+  grid-area: 3/3/7/4;
+}
+.task--other {
+  color: #f27f7f;
+  grid-area: 3/4/7/5;
+}
+.task--title {
+  margin-right: 150px;
+}
+
+.task--container {
+  min-height: 100px;
+  width: 95%;
+  background-color: rgb(255, 255, 254);
+  border-radius: 7px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 15px;
+}
+
+.task--line {
+  height: 70px;
+  min-width: 3px;
+  margin: 0 15px;
+  border-radius: 10px;
+}
+
+.task--status {
+  height: 25px;
+  width: 25px;
+  min-height: 25px;
+  min-width: 25px;
+  border-radius: 50px;
+  margin: 0 15px;
+  cursor: pointer;
+}
+.task--text {
+  margin: 0 15px;
+  max-width: 350px;
+}
+.task--date {
+  grid-area: 2/3/3/4;
+  margin-right: 150px;
+}
+.date--arrow {
+  margin: 10px;
+  cursor: pointer;
+}
+
+.task--text h1 {
+  margin: 0;
+}
+
+.task--modify {
+  height: 30px;
+  width: 30px;
+  border: none;
+  margin-right: 5px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.space {
+  flex-grow: 10;
+}
+
+.task--dropdown {
+  top: 30px;
+  background-color: white;
+  box-shadow: 1px 1px 2px grey;
+  border-radius: 4px;
+  position: absolute;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.dropdown p {
+  border-radius: 4px;
+  margin: 0px;
+  padding: 5px;
+}
+.dropdown p:hover {
+  background-color: wheat;
+}

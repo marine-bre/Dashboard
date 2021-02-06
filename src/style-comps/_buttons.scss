@@ -1,0 +1,76 @@
+.btn {
+  width: 180px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 0.9em;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  margin: 15px;
+  // box-shadow: 1px 1px 5px grey;
+  border: none;
+}
+
+.btn--primary {
+  background-color: $mypink;
+  color: white;
+  border: solid 2px $mypink;
+  &:hover {
+    background-color: transparent;
+    color: $mypink;
+  }
+}
+
+// .btn-secondary {
+//   background-color: white;
+//   color: $mypink;
+//   &:hover{
+//     background-color: $mypink;
+//     color: white;
+//   }
+// }
+
+.btn--secondary {
+  background-color:transparent;
+  color: $mypink;
+  border: solid 2px $mypink;
+  &:hover{
+    background-color: $mypink;
+    color: white;
+  }
+}
+
+.add {
+  display: flex;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+  p{
+    font-size: 0.8em;
+  }
+}
+
+.add--btn {
+  all: unset;
+  height: 30px;
+  width: 30px;
+  min-height: 30px;
+  min-width: 30px;
+  border-radius: 100%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(235, 167, 167, 0.9),
+    rgba(125, 72, 72, 0.8)
+  );
+  background-color: rgba(235, 167, 167, 0.4);
+  position: relative;
+  margin-right: 10px;
+  &:hover{
+    transform: scale(0.98);
+    cursor: pointer;
+  }
+}
+
+.add--icon {
+  color: white;
+}

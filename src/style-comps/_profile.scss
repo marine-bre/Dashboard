@@ -1,0 +1,58 @@
+//PROFILE
+
+.profile--container {
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.8)
+  );
+  background-color: rgba(255, 255, 255, 0.4);
+  grid-area: 1/4/8/5;
+  border-radius: 0 10px 10px 0;
+}
+
+.photo--container {
+  align-items: center;
+}
+.photo {
+    position: relative;
+    left: 20px;
+  }
+.photo--btn {
+  bottom: 30px !important;
+  right: 30px !important;
+  margin: 0 !important;
+}
+
+#profile--messages-title {
+    grid-area: 4/4/6/5;
+  }
+
+.message--container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.message--container--inside {
+  width: calc(24.255vw - 100px);
+}
+
+.message--pic{
+  height: 45px;
+  width: 45px;
+  min-height: 45px;
+  min-width: 45px;
+  border-radius: 100%;
+  background: linear-gradient(
+      to right bottom,
+    rgba(91, 51, 51, 0.4),
+    rgba(235, 167, 167, 0.2)
+  );
+  background-color: rgba(235, 167, 167, 0.4);
+  margin: 8px;
+}
+
+.messages--container {
+  overflow-y: scroll;
+  max-height: 55vh;
+}
