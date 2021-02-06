@@ -9,8 +9,8 @@ function App() {
   return (
     <div className="App">
       <div className='background'>
-      <Redirect to="/login"></Redirect>
       <Router>
+      <Redirect to="/login"></Redirect>
         <Route exact path='/login' component={Login} />
         <Route exact path='/register' component={Register}/>
         <Route exact path='/home' component={Dashboard}/>
