@@ -42,7 +42,7 @@ function Register() {
 
             axios("https://guarded-wildwood-26859.herokuapp.com/api/user/register", requestOptions)
                 .then(response => {
-                    console.log(response.data);
+                    // console.log(response.data);
                     setSuccess(true);
                 })
                 .catch(error => {
