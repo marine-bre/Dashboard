@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import NewsItem from './NewsItem.js'
+import axios from 'axios';
 
 function TaskToday() {
     const [news, setNews] = useState([]);
-    const NEWS_API = '3db9dd4972a747969d0e7664112c714d';
+    const NEWS_API = '6819d60ec5839999b039fcd6743e708e';
 
     const fetchNews = () => {
-        fetch(`https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=${NEWS_API}`)
-            .then(response => response.json())
-            .then(result => setNews([result.articles[0],result.articles[1],result.articles[3],result.articles[4]]))
+        axios(`https://gnews.io/api/v4/search?q=example&token=${NEWS_API}`)
+            // .then(response => console.log(response.data.articles[0]))
+            .then(result => setNews([result.data.articles[0],result.data.articles[1],result.data.articles[3],result.data.articles[4]]))
             .catch(err => console.log(err))
     }
 
@@ -19,7 +20,7 @@ function TaskToday() {
     return (
         <div className='component flex-down news--container' id='news'>
         {/* <h2>News</h2> */}
-            {news.map(n => <NewsItem title={n.title} url={n.url} urlToImage={n.urlToImage}/>)}
+            {news.map(n => <NewsItem title={n.title} url={n.url} urlToImage={n.image}/>)}
             </div>
     );
 }

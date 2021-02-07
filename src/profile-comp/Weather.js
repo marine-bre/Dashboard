@@ -50,7 +50,7 @@ function Weather() {
                 'city': result.data.name
             }))
             .catch(error => console.log(error.response.data.message));
-            console.log(weather)
+            // console.log(weather)
     }
 
     //calling getWeather when coordinates state has been updated

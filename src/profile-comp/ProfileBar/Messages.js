@@ -23,7 +23,7 @@ function Messages(props) {
 
     return (
         <div className='messages--container'>
-            {messages.map(message => <Message sender={message.sender} content={message.content} time={message.time} />)}
+            {messages.map(message => <Message sender={message.sender} content={message.content} time={message.time} alt={message.sender}/>)}
         </div>
     );
 }
